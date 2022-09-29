@@ -245,20 +245,18 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(array) {
-  const newArray = array.slice(0, array.length)
+function listOfNames(array) 
+{
+  const listName = [];
+  for(let i = 0; i <  array.length; i++)
   {
-  let i = 0;
-  while(array[i].length <array.length)
-  {
-    newArray[i].splice(i, 1);
-    newArray[i].push(array[i].name);
-    i++;
+    listName.push(array[i].name);
   }
-  return newArray;
+  return listName;
+  console.log(listName);
 }
-}
-console.log(listOfNames(artists));
+
+listOfNames(artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
