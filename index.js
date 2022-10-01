@@ -353,17 +353,17 @@ function artistInfo(array, name)
   const artistBio = [];
   for(let i = 0; i < array.length; i++)
     {
-
           if(array[i].name === name)  
           {
-            let myArtist = array[i].bio;
-            artistBio.push(myArtist);
+            artistBio.push(array[i].bio);
+            console.log(artistBio)
           }
-    }
+   }
   return artistBio;
+  console.log(artistBio)
 
 }
-artistInfo(artists, 'Frida Kahlo');
+artistInfo(artists, 'Kazimir Malevich');
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
