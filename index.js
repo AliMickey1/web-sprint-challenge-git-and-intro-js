@@ -350,20 +350,17 @@ Use artistInfo to do the following:
 
 function artistInfo(array, name)
 {
-  const artistBio = [];
   for(let i = 0; i < array.length; i++)
     {
           if(array[i].name === name)  
           {
-            artistBio.push(array[i].bio);
-            console.log(artistBio)
+
+            return array[i].bio;
           }
    }
-  return artistBio;
-  console.log(artistBio)
-
 }
-artistInfo(artists, 'Kazimir Malevich');
+artistInfo(artists, 'Frida Kahlo')
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
